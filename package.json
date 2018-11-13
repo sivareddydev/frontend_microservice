@@ -1,4 +1,4 @@
-{
+,{
   "name": "frontend",
   "version": "1.0.0",
   "description": "Frontend for Greeting and Helloworld microservices",
@@ -23,7 +23,11 @@
     "express": "^4.13.4",
     "jquery": "~3.0.0",
     "patternfly": "^3.3.3",
-    "request": "^2.72.0"
+    "request": "^2.72.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
   },
   "optionalDependencies": {
     "phantomjs": "~1.9"
