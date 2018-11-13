@@ -1,11 +1,10 @@
-,{
+{
   "name": "frontend",
   "version": "1.0.0",
   "description": "Frontend for Greeting and Helloworld microservices",
   "main": "frontend.js",
   "scripts": {
-    "start": "node frontend.js",
-    "build": "npm run build:css && npm run build:js"
+    "start": "node frontend.js"
   },
   "repository": {
     "type": "git",
