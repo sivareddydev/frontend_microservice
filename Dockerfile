@@ -1,4 +1,4 @@
-FROM centos:7
+#FROM centos:7
 RUN yum install -y curl sudo
 
 RUN sudo yum install -y gcc-c++ make
@@ -10,7 +10,7 @@ ADD . /opt/app-root/src/
 
 WORKDIR /opt/app-root/src
 
-RUN ["/bin/bash", "-c", "npm install"]
+#RUN ["/bin/bash", "-c", "npm install"]
 
 EXPOSE 8084
 
