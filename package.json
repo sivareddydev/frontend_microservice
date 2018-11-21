@@ -25,7 +25,8 @@
     "express": "^4.13.4",
     "jquery": "~3.0.0",
     "patternfly": "^3.3.3",
-    "request": "^2.72.0"
+    "request": "^2.72.0",
+    "extract-json": "^0.2.0"
   },
   "optionalDependencies": {
     "phantomjs": "~1.9"
