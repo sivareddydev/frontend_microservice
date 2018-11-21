@@ -6,10 +6,7 @@
   "scripts": {
     "start": "node frontend.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint --fix",
-    "test:unit": "vue-cli-service test:unit",
-    "inspect": "vue inspect > dump.js"
+    "build": "vue-cli-service build"
   },
   "repository": {
     "type": "git",
@@ -22,18 +19,25 @@
   },
   "homepage": "https://github.com/redhat-developer-demos/kubernetes-lab#readme",
   "dependencies": {
-    "@vue/cli-service": "^3.x.x",
     "body-parser": "^1.15.1",
     "bootstrap": "~3.3.5",
     "express": "^4.13.4",
+    "jquery": "~3.0.0",
+    "patternfly": "^3.3.3",
+    "request": "^2.72.0",
     "grunt": "~0.4.5",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0",
-    "jquery": "~3.0.0",
-    "patternfly": "^3.3.3",
-    "request": "^2.72.0",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.0.0",
+    "@vue/cli-service": "^3.x.x",
+    "@vue/babel-preset-app": "^3.0.1",
+    "babel-polyfill": "^6.26.0",
+    "es6-promise": "^4.2.4",
+    "vue": "^2.5.17",
+    "vue-cookie": "^1.1.4",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "optionalDependencies": {
     "phantomjs": "~1.9"
