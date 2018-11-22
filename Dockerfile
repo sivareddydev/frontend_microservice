@@ -23,7 +23,6 @@ RUN export NVM_DIR="/tools-copy/nvm-${NVM_VERSION}"; \
 ADD . /opt/app-root/src/
 
 WORKDIR /opt/app-root/src
-
 RUN ["/bin/bash", "-c", "npm install"]
 
 EXPOSE 8085
