@@ -2,7 +2,7 @@ FROM centos:7
 RUN yum install -y curl sudo
 
 RUN sudo yum install -y gcc-c++ make
-curl -sL https://rpm.nodesource.com/setup_8.x | sudo bash -
+RUN curl -sL https://rpm.nodesource.com/setup_8.x | sudo bash -
 RUN yum install -y nodejs
 
 ADD . /opt/app-root/src/
