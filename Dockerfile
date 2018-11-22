@@ -1,6 +1,6 @@
 FROM centos:7
 
-RUN yum install -y curl sudo
+RUN yum install -y curl sudo wget
 RUN sudo yum install -y gcc-c++ make
 ARG GIT_COMMIT_ID
 ARG NVM_VERSION=0.33.11
