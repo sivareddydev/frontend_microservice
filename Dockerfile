@@ -9,8 +9,7 @@ RUN yum install -y nodejs
 ADD . /opt/app-root/src/
 
 WORKDIR /opt/app-root/src
-
-#RUN ["/bin/bash", "-c", "npm install"]
+RUN ["/bin/bash", "-c", "npm install"]
 
 EXPOSE 8084
 
