@@ -8,7 +8,6 @@ ARG NODE_LTS=8.11.1
 ARG NODE_OLD_LTS=6.14.2
 ARG NODE_CURRENT=10.1.0
 
-USER root
 RUN mkdir -p /tools /tools-copy; \
      wget -O - https://codeload.github.com/creationix/nvm/tar.gz/v0.33.11 \
     | tar -xzvC /tools-copy \
@@ -23,10 +22,17 @@ RUN export NVM_DIR="/tools-copy/nvm-${NVM_VERSION}"; \
 ADD . /opt/app-root/src/
 
 WORKDIR /opt/app-root/src
-RUN ["/bin/bash", "-c", "npm install"]
+USER root
+
+VOLUME "/tools"
+
+CMD cp -r /tools-copy/nvm/versions/node/v${NODE_VERSION}/* /tools/
+
+
+RUN ["/bin/bash", "-c", "/tools/npm install"]
 
 EXPOSE 8085
 
-CMD /bin/bash -c 'npm start'
+CMD /bin/bash -c '/tools/npm start'
 
 
