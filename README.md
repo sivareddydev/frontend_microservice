@@ -1,5 +1,4 @@
 # frontend_microservice
-
 ## Project setup
 ```
 npm install
